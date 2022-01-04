@@ -1,4 +1,4 @@
-# ShowRubberLineVB
+# SuperQuadric
 
 This is a demo program for DXFReader.NET Component.
 
