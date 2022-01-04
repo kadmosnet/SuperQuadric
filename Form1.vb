@@ -126,6 +126,10 @@ Public Class Form1
         SaveRegistry()
     End Sub
 
+    Private Sub Button17_Click(sender As Object, e As EventArgs) Handles Button17.Click
+        TextBoxColor.Text = DxfReaderNET1.ShowPalette(AciColor.FromCadIndex(Val(TextBoxColor.Text))).ToString
+    End Sub
+
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         DxfReaderNET1.NewDrawing()
         LoadRegistry()

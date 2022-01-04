@@ -79,6 +79,7 @@ Partial Class Form1
         Me.Label6 = New System.Windows.Forms.Label()
         Me.DxfReaderNET1 = New DXFReaderNET.DXFReaderNETControl()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
+        Me.Button17 = New System.Windows.Forms.Button()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.Panel2.SuspendLayout()
@@ -93,6 +94,7 @@ Partial Class Form1
         '
         'SplitContainer1.Panel1
         '
+        Me.SplitContainer1.Panel1.Controls.Add(Me.Button17)
         Me.SplitContainer1.Panel1.Controls.Add(Me.Button16)
         Me.SplitContainer1.Panel1.Controls.Add(Me.Button15)
         Me.SplitContainer1.Panel1.Controls.Add(Me.RadioButton3)
@@ -187,6 +189,7 @@ Partial Class Form1
         'RadioButton2
         '
         Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Checked = True
         Me.RadioButton2.Location = New System.Drawing.Point(13, 557)
         Me.RadioButton2.Margin = New System.Windows.Forms.Padding(2)
         Me.RadioButton2.Name = "RadioButton2"
@@ -535,7 +538,7 @@ Partial Class Form1
         '
         Me.TextBoxColor.Location = New System.Drawing.Point(118, 64)
         Me.TextBoxColor.Name = "TextBoxColor"
-        Me.TextBoxColor.Size = New System.Drawing.Size(124, 20)
+        Me.TextBoxColor.Size = New System.Drawing.Size(53, 20)
         Me.TextBoxColor.TabIndex = 6
         Me.TextBoxColor.Text = "7"
         '
@@ -554,7 +557,7 @@ Partial Class Form1
         Me.TextBoxPointsXring.Name = "TextBoxPointsXring"
         Me.TextBoxPointsXring.Size = New System.Drawing.Size(124, 20)
         Me.TextBoxPointsXring.TabIndex = 4
-        Me.TextBoxPointsXring.Text = "20"
+        Me.TextBoxPointsXring.Text = "50"
         '
         'Label2
         '
@@ -571,7 +574,7 @@ Partial Class Form1
         Me.TextBoxRings.Name = "TextBoxRings"
         Me.TextBoxRings.Size = New System.Drawing.Size(124, 20)
         Me.TextBoxRings.TabIndex = 2
-        Me.TextBoxRings.Text = "10"
+        Me.TextBoxRings.Text = "25"
         '
         'Label1
         '
@@ -586,7 +589,7 @@ Partial Class Form1
         '
         Me.TextBox4.Location = New System.Drawing.Point(118, 64)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(124, 20)
+        Me.TextBox4.Size = New System.Drawing.Size(53, 20)
         Me.TextBox4.TabIndex = 6
         '
         'Label4
@@ -646,6 +649,15 @@ Partial Class Form1
         Me.DxfReaderNET1.ShowGridRuler = False
         Me.DxfReaderNET1.Size = New System.Drawing.Size(779, 613)
         Me.DxfReaderNET1.TabIndex = 0
+        '
+        'Button17
+        '
+        Me.Button17.Location = New System.Drawing.Point(177, 64)
+        Me.Button17.Name = "Button17"
+        Me.Button17.Size = New System.Drawing.Size(65, 22)
+        Me.Button17.TabIndex = 48
+        Me.Button17.Text = "Select..."
+        Me.Button17.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -722,4 +734,5 @@ Partial Class Form1
     Friend WithEvents RadioButton1 As RadioButton
     Friend WithEvents Button16 As Button
     Friend WithEvents Button15 As Button
+    Friend WithEvents Button17 As Button
 End Class

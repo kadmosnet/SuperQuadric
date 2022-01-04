@@ -10,7 +10,7 @@
 *.userosscache
 *.sln.docstates
 *.ico
-
+file
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
