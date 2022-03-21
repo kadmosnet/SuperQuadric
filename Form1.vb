@@ -3,7 +3,7 @@ Imports Microsoft.Win32
 Public Class Form1
 
     Dim rxg, ryg, rzg, a1, a2, a3, eps1, eps2, eta, omega As Double
-    Dim prec, num, r, p, j, k, v1, v2, va1, va2 As Integer
+    Dim num, r, p, j, k, v1, v2, va1, va2 As Integer
     Dim color As Integer
 
     Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
@@ -69,7 +69,7 @@ Public Class Form1
             Center.X = 0
             Center.Y = 0
             Center.Z = 0
-            prec = 4
+
             a1 = 20
             a2 = 20
             a3 = 20
@@ -110,7 +110,7 @@ Public Class Form1
         Center.X = Val(TextBoxCenterX.Text)
         Center.Y = Val(TextBoxCenterY.Text)
         Center.Z = Val(TextBoxCenterZ.Text)
-        prec = 4
+
         a1 = Val(TextBoxRadiusX.Text)
         a2 = Val(TextBoxRadiusY.Text)
         a3 = Val(TextBoxRadiusZ.Text)
@@ -294,7 +294,7 @@ Public Class Form1
                     Case 7, 17
                         dxfver = Header.DxfVersion.AutoCad2007
 
-                    Case 8, 16
+                    Case 8, 18
                         dxfver = Header.DxfVersion.AutoCad2010
 
 
@@ -411,7 +411,7 @@ Public Class Form1
 
 
     Private Sub LoadRegistry()
-
+        Registry.CurrentUser.OpenSubKey("Software", True).CreateSubKey("SuperQuadric")
         Me.Width = Registry.GetValue("HKEY_CURRENT_USER\Software\SuperQuadric", "m_wWidth", Screen.PrimaryScreen.Bounds.Width - 40)
         Me.Height = Registry.GetValue("HKEY_CURRENT_USER\Software\SuperQuadric", "m_wHeight", Screen.PrimaryScreen.Bounds.Height - 60)
         Me.Left = Registry.GetValue("HKEY_CURRENT_USER\Software\SuperQuadric", "m_wLeft", 20)
