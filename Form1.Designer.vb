@@ -24,6 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
+        Me.Button17 = New System.Windows.Forms.Button()
         Me.Button16 = New System.Windows.Forms.Button()
         Me.Button15 = New System.Windows.Forms.Button()
         Me.RadioButton3 = New System.Windows.Forms.RadioButton()
@@ -79,7 +80,6 @@ Partial Class Form1
         Me.Label6 = New System.Windows.Forms.Label()
         Me.DxfReaderNET1 = New DXFReaderNET.DXFReaderNETControl()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
-        Me.Button17 = New System.Windows.Forms.Button()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel1.SuspendLayout()
         Me.SplitContainer1.Panel2.SuspendLayout()
@@ -155,6 +155,15 @@ Partial Class Form1
         Me.SplitContainer1.Size = New System.Drawing.Size(1050, 613)
         Me.SplitContainer1.SplitterDistance = 267
         Me.SplitContainer1.TabIndex = 0
+        '
+        'Button17
+        '
+        Me.Button17.Location = New System.Drawing.Point(177, 64)
+        Me.Button17.Name = "Button17"
+        Me.Button17.Size = New System.Drawing.Size(65, 22)
+        Me.Button17.TabIndex = 48
+        Me.Button17.Text = "Select..."
+        Me.Button17.UseVisualStyleBackColor = True
         '
         'Button16
         '
@@ -344,7 +353,7 @@ Partial Class Form1
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(230, 22)
         Me.Button1.TabIndex = 29
-        Me.Button1.Text = "Generate SuperQadric"
+        Me.Button1.Text = "Generate SuperQuadric"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'TextBoxEps2
@@ -642,6 +651,7 @@ Partial Class Form1
         Me.DxfReaderNET1.DXF = Nothing
         Me.DxfReaderNET1.FileName = Nothing
         Me.DxfReaderNET1.HighlightMarkerColor2 = System.Drawing.Color.Magenta
+        Me.DxfReaderNET1.HighlightNotContinuous = False
         Me.DxfReaderNET1.Location = New System.Drawing.Point(0, 0)
         Me.DxfReaderNET1.Margin = New System.Windows.Forms.Padding(4)
         Me.DxfReaderNET1.Name = "DxfReaderNET1"
@@ -649,15 +659,6 @@ Partial Class Form1
         Me.DxfReaderNET1.ShowGridRuler = False
         Me.DxfReaderNET1.Size = New System.Drawing.Size(779, 613)
         Me.DxfReaderNET1.TabIndex = 0
-        '
-        'Button17
-        '
-        Me.Button17.Location = New System.Drawing.Point(177, 64)
-        Me.Button17.Name = "Button17"
-        Me.Button17.Size = New System.Drawing.Size(65, 22)
-        Me.Button17.TabIndex = 48
-        Me.Button17.Text = "Select..."
-        Me.Button17.UseVisualStyleBackColor = True
         '
         'Form1
         '

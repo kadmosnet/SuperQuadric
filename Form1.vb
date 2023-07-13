@@ -31,9 +31,6 @@ Public Class Form1
             .DefaultExt = "jpg"
             .Filter = "JPEG (*.jpg)|*.jpg|PNG (*.png)|*.png|BMP (*.bmp)|*.bmp"
 
-
-
-
             .FilterIndex = 1
             If .ShowDialog() = System.Windows.Forms.DialogResult.OK Then
                 Select Case .FilterIndex
