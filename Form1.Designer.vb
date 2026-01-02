@@ -645,7 +645,7 @@ Partial Class Form1
         'DxfReaderNET1
         '
         Me.DxfReaderNET1.AutoSize = True
-        Me.DxfReaderNET1.ContinuousHighlight = False
+
         Me.DxfReaderNET1.CustomCursor = DXFReaderNET.CustomCursorType.None
         Me.DxfReaderNET1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DxfReaderNET1.DXF = Nothing
